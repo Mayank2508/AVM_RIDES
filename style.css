@@ -1,0 +1,230 @@
+.container{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+h1{
+    font-family: fantasy;
+    font-size: 3em;
+    border-bottom: 2px solid pink;
+    border-right: 2px solid yellow;
+    width:800px;
+    text-align: center;
+    box-shadow: 4px 4px 5px #888888;
+    margin:0px;
+    text-shadow: 2px 2px 5px red;
+}
+img{
+    width:200px;
+    height:180px;
+    align-items: center;
+    transition: all 1s;
+    opacity: 1.0;
+  
+}
+img:hover{
+    transform: scale(1.1);
+}
+
+h1{
+    font-size: 3rem;
+    color: rgb(11, 1, 2);
+    border-radius: 25px;
+    border: 2px solid #73AD21;
+    padding: 20px;
+    width: 1080px;
+    height: 100px;
+    background-color:  rgba(0, 145, 255, 0.4);
+}
+hr{
+    border-color: #23ee08;
+    border-width: 3px;
+    max-width: 65px;
+}
+.buffer{
+    height:10rem;
+}
+html{
+    width:100%;
+    height:50%;
+    
+    font-family: sans-serif;
+    background: url("https://wallpaperaccess.com/full/1559732.jpg") no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: rgb(236, 21, 21);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: rgb(0, 187, 255);
+  }
+  .header {
+    background-color: aqua;
+    text-align: center;
+    padding: 20px;
+  }
+  .topnav {
+    overflow: hidden;
+    background-color: #0f0b0b;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    color: rgb(231, 25, 25);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: rgb(14, 1, 1);
+    color: rgb(231, 24, 24);
+  }
+  
+  /* Style the "active" element to highlight the current page */
+  .topnav a.active {
+    background-color: #03090e;
+    color: rgb(224, 24, 24);
+  }
+  
+  /* Style the search box inside the navigation bar */
+  .topnav input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+    color: #03090e;
+    
+  }
+  
+  /* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
+  @media screen and (max-width: 600px) {
+    .topnav a, .topnav input[type=text] {
+      float: none;
+      display: block;
+      text-align: left;
+      width: 100%;
+      margin: 0;
+      padding: 14px;
+    }
+    .topnav input[type=text] {
+      border: 1px solid rgb(235, 18, 18);
+    }
+  }
+  /* The container must be positioned relative: */
+.custom-select {
+  position: relative;
+  font-family: Arial;
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element: */
+}
+
+.select-selected {
+  background-color: rgb(255, 195, 30);
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,.select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+}
+
+/* Style items (options): */
+.select-items {
+  position: absolute;
+  background-color: DodgerBlue;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+select {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-family: cursive, sans-serif;
+  outline: 0;
+  background: #022310;
+  color: #fff;
+  border: 1px solid crimson;
+  padding: 4px;
+  border-radius: 9px;
+}
+.button {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #04AA6D;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
